@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='./styles/style.css' type='text/css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header__shadow">
+            <div class="container">
+                <header class="header">
+                    <div class="header__item hide">
+                        <a href="" ><img src="src/logo.svg" alt="Логотип" /></a>
+                    </div>
+                    <div class="header__item">
+                        <p class="header__call hide">Позвоните сейчас</p>
+                        <a class="header__num" href="">8 495 230 21 55</a>
+                    </div>
+                    <div class="header__item">
+                        <button class="header__consult">
+                            <img src="src/arrow-blue.svg" alt="Перейти к записи" />
+                            Записаться на консультацию <br>юриста
+                        </button>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="main__test">
+                <div class="main1__test-body">
+                        <p class="main1__remark">
+                        Списание долгов на основании ФЗ№ 127 «О нестостоятельности (банкротстве)»
+                        </p>
+
+                        <p class="main1__title">
+                            Спишем ваши долги
+                        </p>
+
+                        <p class="main__subtitle">
+                            Пройдите тест и получите:
+                        </p>
+
+                        <div class="main__item">
+                            <img src="src/arrow-right.svg" alt="Стрелка" />
+                            <p class="main1-item-txt">Варианты списания вашего долга</p>
+                        </div>
+
+                        <div class="main__item">
+                            <img src="src/arrow-right.svg" alt="Стрелка" />
+                            <p class="main1-item-txt">Консультацию юриста по списанию долгов</p>
+                        </div>
+
+                        <div class="main__item">
+                            <img src="src/arrow-right.svg" alt="Стрелка" />
+                            <p class="main1-item-txt">Сроки и стоимость списания</p>
+                        </div>
+
+                        <div class="main__item">
+                            <img src="src/arrow-right.svg" alt="Стрелка" />
+                            <p class="main1-item-txt">Список необходимых документов <br>для начала процедуры</p>
+                        </div>
+
+                        <button class="main1__test-options btn__options" type="button">
+                            Получить варианты списания
+                            <img src="src/arrow-right-bold.svg" alt="Стрелка" />
+                        </button>
+                </div>
+
+
+
+
+
+                    <div class='main2__test-body'>
+                        <div class="main__test-stage"><img src="src/stage1.svg" alt="Шаг 1"></div>
+                        <p class="main__subtitle">Укажите общую сумму ваших долгов</p>
+
+                        <form id="form2" method="post" action="#"> <!--Начало второй формы-->
+                        <div class="main__radio">
+                            <input class="debt" type="radio" name="debt" value="менее 500 000  рублей" >
+                            <label for="debt-sum">менее 500 000  рублей</label>
+                        </div>
+                        <div class="main__radio">
+                            <input  class="debt" type="radio" name="debt" value="от 500 000 до 1 000 000 рублей" >
+                            <label for="debt-sum">от 500 000 до 1 000 000 рублей</label>
+                        </div>
+                        <div class="main__radio">
+                            <input class="debt" type="radio" name="debt" value="от 1 000 000 до 5 000 000 рублей" >
+                            <label for="debt-sum">от 1 000 000 до 5 000 000 рублей</label>
+                        </div>
+                        <div class="main__radio">
+                            <input class="debt" type="radio" name="debt" value="более 5 000 000" >
+                            <label for="debt-sum">более 5 000 000</label>
+                        </div>
+
+
+                        <button class="main__button-next next-2" name="sub" type="submit">
+                            Далее 
+                            <img src="src/arrow-right-bold.svg" />
+                        </button>
+
+                    </div>
+
+
+                    <div class='main3__test-body'>
+                        <div class="main__test-stage"><img src="src/stage2.svg" alt="Шаг 2"></div>
+                        <p class="main__subtitle">Есть ли у вас в собственности имущество?</p>
+
+                        <div class="main__radio">
+                            <input type="radio" name="estate" value="Да, есть квартира (две и более)" >
+                            <label for="estate">Да, есть квартира (две и более)</label>
+                        </div>
+                        <div class="main__radio">
+                            <input type="radio" name="estate" value="Да, есть автомобиль" >
+                            <label for="estate">Да, есть автомобиль</label>
+                         </div>
+                        <div class="main__radio">
+                            <input type="radio" name="estate" value="Да, есть коммерческая собственность" >
+                            <label for="estate">Да, есть коммерческая собственность</label>
+                        </div>
+                        <div class="main__radio">
+                            <input type="radio" name="estate" value="Да, есть другая собственность" >
+                            <label for="estate">Да, есть другая собственность</label>
+                        </div>
+                        <div class="main__radio">
+                            <input type="radio" name="estate" value="Нет, ничего нет" >
+                            <label for="estate">Нет, ничего нет</label>
+                        </div>
+                        <div class="main__buttons" >
+                            <button class="main__button-back back-3" type="button" name="back">
+                                <img src="src/arrow-left-gray.svg" />
+                                    Назад
+                                </button>
+                                <button class="main__button-next next-3" name="sub" type="submit">
+                                    Далее 
+                                <img src="src/arrow-right-bold.svg" />
+                            </button>  
+                        </div>
+                        
+
+
+                    </div>
+
+
+                    <div class='main4__test-body'>
+                        <div class="main__test-stage"><img src="src/stage3.svg" alt="Шаг 3"></div>
+                        <p class="main__subtitle">Совершали ли вы крупные сделки за последние 3 года?</p>
+        
+                            <div class="main__radio">
+                                <input type="radio" name="deal" value="Да. была продажа квартиры / авто / участка" >
+                                <label for="radio__3-1">Да. была продажа квартиры / авто / участка</label>
+                            </div>
+                            <div class="main__radio">
+                                <input type="radio" name="deal" value="Да. была продажа коммерческой собственности" >
+                                <label for="deal">Да. была продажа коммерческой собственности</label>
+                            </div>
+                            <div class="main__radio">
+                                <input type="radio" name="deal" value="Да, была продажа ИП / ООО" >
+                                <label for="deal">Да, была продажа ИП / ООО</label>
+                            </div>
+                            <div class="main__radio">
+                                <input type="radio" name="deal" value="Да, была продажа (другое)" >
+                                <label for="deal">Да, была продажа (другое)</label>
+                            </div>
+                            <div class="main__radio">
+                                <input type="radio" name="deal" value="Нет, ничего не было" >
+                                <label for="deal">Нет, ничего не было</label>
+                            </div>
+
+                            <div class="main__buttons">
+                                <button class="main__button-back back-4" name="back" type="button">
+                                    <img src="src/arrow-left-gray.svg" />
+                                    Назад
+                                </button>
+                                <button class="main__button-next next-4" name="sub" type="submit">
+                                    Далее 
+                                    <img src="src/arrow-right-bold.svg" />
+                                </button>  
+                            </div>
+    
+
+                    </div>
+
+
+
+                    <div class='main5__test-body'>
+                        <div class="main__test-stage"><img src="src/stage4.svg" alt="Шаг 4"></div>
+                        <p class="main__subtitle">Как вы бы хотели получить варианты списанию долгов и консультацию юриста?</p>
+        
+                            <div class="main__radio">
+                                <input type="radio" name="consult" value="В офисе «ЮрКонсалт+»" >
+                                <label for="consult">В офисе «ЮрКонсалт+»</label>
+                            </div>
+                            <div class="main__radio">
+                                <input type="radio" name="consult" value="По телефону" >
+                                <label for="consult">По телефону</label>
+                            </div>
+    
+                            <button class="main5__test-options btn__options" type="submit">
+                                Получить варианты списания
+                                <img src="src/arrow-right-bold.svg" alt="Стрелка" />
+                            </button>
+
+                    </div>
+                
+                    <div class='main6__test-body'>
+                        <div class="main__test-stage"> <img src="src/stage5.svg" alt="Шаг 5"/> </div>
+                        <div class="main6__test-form">
+                            <p class="modal__consult-text white">Укажите ваши контактные данные</p>
+                                <input type="text" name="name" placeholder="Ваше имя">
+                                <input type="phone" class="phone" name="phone" placeholder="Номер телефона">
+                                <button class="main6__test-options btn__options" type="submit">
+                                    Получить варианты списания
+                                </button>
+                            </form> <!--Конец второй формы-->
+                            <div id="erconts"></div>
+                        </div>
+                        <p class="main6__test-remark">*отправляя формы на данном сайте, вы даете согласие <br>на обработку персональных данных в соответствии <br>с 152-ФЗ</p>
+                    </div>
+
+
+                    <div class='main7__test-body'>
+                        <div class="main7__test-thanks">
+                            <p class="modal__thanks-title white">Благодарим за заявку!</p>
+                            <p class="modal__thanks-text white">Ожидайте звонка нашего юриста <br>с номера</p>
+                            <a class="modal__thanks-phone white">8 495 230 21 55</a>
+                            <p class="modal__thanks-media white">Узнайте о нас больше</p>
+                            <div class='media__icons'>
+                                <a href=""><img src="src/social1.svg" alt="Телеграм" /></a>
+                                <a href=""><img src="src/social2.svg" alt="Вконтакте" /></a>
+                                <a href=""><img src="src/social3.svg" alt="Одноклассники" /></a>
+                                <a href=""><img src="src/social4.svg" alt="Инстаграм" /></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                
+            <div class="main__img">
+                <img src="src/profile.svg" alt="Фигура женщины с весами" />
+            </div>
+        </main>
+
+        <div class="container">
+            <div class="features">
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="src/feature1.svg" />
+                    </div>
+                    <p class="features__title">
+                        Опытные юристы
+                    </p>
+                    <p class="features__description">
+                        более 10 лет юридического стажа, <br>более 5 лет в сфере банкротства
+                    </p>
+                </div>
+
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="src/feature2.svg" />
+                    </div>
+                    <p class="features__title">
+                        Офис в центре Москвы
+                    </p>
+                    <p class="features__description">
+                        5 минут от станции метро <br>«Баррикадная», 7 минут от станций <br>Пушкинская и Арбатская
+                    </p>
+                </div>
+
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="src/feature3.svg" />
+                    </div>
+                    <p class="features__title">
+                        Гарантии в договоре
+                    </p>
+                    <p class="features__description">
+                        работаем только по договору, <br>в котором прописываем все <br>варианты и гарантируем <br>результат
+                    </p>
+                </div>
+
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="src/feature4.svg" />
+                    </div>
+                    <p class="features__title">
+                        На более 570 миллиардов
+                    </p>
+                    <p class="features__description">
+                        сохранили имущество клиентов <br>и избавили от выплат по кредитам <br>и займам
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class='footer__body'>
+                    <div class='footer__body-left'>
+                        <div class='footer__contact'>
+                            <a href="">+7 495 230 21 55</a>
+                            <a href="">info@lordpartners.ru</a>
+                        </div>
+                        <p class='footer__remark'>
+                            *отправляя формы на данном сайте, вы даете <br>согласие на обработку персональных данных <br>в соответствии с 152-ФЗ
+                        </p>
+                        <p class='footer__info-txt'>При информационном содействии</p>
+                        <div class='footer__info'>
+                            <img src="src/info1.svg" />
+                            <img src="src/info2.svg" />
+                            <img src="src/info3.svg" />
+                            <img src="src/info4.svg" />
+                        </div>
+                    </div>
+
+
+                    <div class='footer__body-right'>
+                        <p class="footer__cases-title"> 
+                            Специализируемся на случаях:
+                        </p>
+                        <div class="footer__cases">
+                            <div class="footer__cases-col">
+                                <div class='footer__case'><img src="src/check-black.svg" /> Полное списание долгов</div>
+                                <div class='footer__case'><img src="src/check-black.svg" /> Частичное списание долгов</div>
+                                <div class='footer__case'><img src="src/check-black.svg" /> Реструктуризация долгов</div>
+                            </div>
+
+                            <div class="footer__cases-col">
+                                <div class='footer__case'><img src="src/check-black.svg" /> Банкротство ИП</div>
+                                <div class='footer__case'><img src="src/check-black.svg" /> Списание долгов по распискам</div>
+                                <div class='footer__case'><img src="src/check-black.svg" /> Списание долгов перед государством</div>
+                            </div>
+                        </div>
+
+                        <div class='footer__where'>
+                            <div class='footer__media'>
+                                <p class='footer__media-txt'>Больше о нас здесь</p>
+                                <div class='media__icons'>
+                                    <a href=""><img src="src/social1.svg" alt="Телеграм" /></a>
+                                    <a href=""><img src="src/social2.svg" alt="Вконтакте" /></a>
+                                    <a href=""><img src="src/social3.svg" alt="Одноклассники" /></a>
+                                    <a href=""><img src="src/social4.svg" alt="Инстаграм" /></a>
+                                </div>
+                            </div>
+                            <div class="footer__city">
+                                г. Москва <br>Гранатный переулок 4, строение 2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="copyright">ИНН 9702007211  ОГРН 1197746584760  ООО «ЮрКонсалт+»  Политика персональных данных</p>
+            </div>
+        </footer>
+
+
+        <div class="modal__consult">
+            <div class="modal__consult-body">
+                <div class="modal__consult-inputs">
+                    <p class="modal__consult-text">Укажите ваши контактные данные</p>
+                    <form id="form1" method="post" action="#"> <!-- Первая форма (она здесь, потому что на странице она первая сверху вниз)-->
+                        <input type="text" name="name" placeholder="Ваше имя" required />
+                        <input type="phone" class="phone" name="phone" placeholder="Номер телефона" required />
+                        <input class="modal__consult-button" name="form1" type="submit" value="Получить консультацию юриста" />
+                    </form>
+                    <p class="modal__remark">*отправляя формы на данном сайте, вы даете согласие <br>на обработку персональных данных в соответствии <br>с 152-ФЗ</p>
+                    <div id="erconts"></div>
+                </div>
+                <a class="modal__consult-close"><img src="src/close-gray.svg"/></a>
+            </div>
+
+              
+
+            <div class="modal__thanks-body">
+                <div clas="modal__thanks-block">
+                    <p class="modal__thanks-title">Благодарим за заявку!</p>
+                    <p class="modal__thanks-text">Ожидайте звонка нашего юриста <br>с номера</p>
+                    <a class="modal__thanks-phone">8 495 230 21 55</a>
+                    <p class="modal__thanks-media">Узнайте о нас больше</p>
+                    <div class='media__icons'>
+                        <a href=""><img src="src/social1.svg" alt="Телеграм" /></a>
+                        <a href=""><img src="src/social2.svg" alt="Вконтакте" /></a>
+                        <a href=""><img src="src/social3.svg" alt="Одноклассники" /></a>
+                        <a href=""><img src="src/social4.svg" alt="Инстаграм" /></a>
+                    </div>
+                    <a class="modal__consult-close"><img src="src/close-gray.svg"/></a> 
+                </div>    
+
+            </div>
+        </div>
+
+
+
+        <div class="modal__sale">
+            <div class="modal__sale-body">
+                <div class="modal__sale-select">
+                    <p class="modal__sale-title">Скидка 33%</p>
+                    <p class="modal__sale-subtitle">на лиды в вашем городе</p>
+                    <p class="modal__sale-enter">Укажите регион и узнайте, действует ли скидка</p>
+                    <select class="modal__sale-region" name="region">
+                        <option value="#" disabled selected hidden>Ваш регион</option>
+                        <option value="#">Санкт-Петербург</option>
+                        <option value="#">Москва</option>
+                        <option value="#">Краснодарский край</option>
+                        <option value="#">Алтайский край</option>
+                    </select>
+
+                    <button class="modal__sale-btn" type="submit">
+                        Получить скидку
+                    </button>
+                </div>
+
+                <a class="modal__sale-close" href=""><img src="src/close-gray.svg"/></a>
+
+            </div>
+
+            <div class="modal2__sale-body">
+                <div class="modal__sale-form">
+                    <p class="modal__sale-title">Скидка 33%</p>
+                    <p class="modal__sale-subtitle">на лиды в вашем городе</p>
+                    <p class="modal__sale-enter">Укажите ваши данные для связи</p>
+                    <form id="form3" method="post" action="#"> <!-- Третья форма -->
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="phone" class="phone" name="phone" placeholder="Номер телефона" required>
+                        <input class="modal2__sale-btn" name="sub" type="submit" value="Получить скидку">
+                    </form>
+                    <p class="modal__remark">*отправляя формы на данном сайте, вы даете согласие <br>на обработку персональных данных в соответствии <br>с 152-ФЗ</p>
+                </div>
+                <a class="modal__sale-close" href=""><img src="src/close-gray.svg"/></a>
+            </div>
+
+            <div class="modal2__thanks-body">
+                <div clas="modal__thanks-block">
+                    <p class="modal__thanks-title">Благодарим за заявку!</p>
+                    <p class="modal__thanks-text">Ожидайте звонка нашего юриста <br>с номера</p>
+                    <a class="modal__thanks-phone">8 495 230 21 55</a>
+                    <p class="modal__thanks-media">Узнайте о нас больше</p>
+                    <div class='media__icons'>
+                        <a href=""><img src="src/social1.svg" alt="Телеграм" /></a>
+                        <a href=""><img src="src/social2.svg" alt="Вконтакте" /></a>
+                        <a href=""><img src="src/social3.svg" alt="Одноклассники" /></a>
+                        <a href=""><img src="src/social4.svg" alt="Инстаграм" /></a>
+                    </div>
+                    <a class="modal__sale-close" href=""><img src="src/close-gray.svg"/></a>
+                </div>    
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+
+    <!--AJAX-->
+
+    <script>
+        $(document).ready(function () {
+        $('form').submit(function () {
+            let formID = $(this).attr('id');
+            let formNm = $('#' + formID);
+            $.ajax({
+                type: 'POST',
+                url: "send.php",
+                dataType: 'text',
+                data: formNm.serialize(),
+                error: function(){$("#erconts").html("Произошла ошибка. Пожалуйста, попробуйте ещё раз.")},
+                success: function(){console.log('done')}
+            });
+            return false;
+        });
+    });
+    </script>
+
+
+</body>
+</html>
