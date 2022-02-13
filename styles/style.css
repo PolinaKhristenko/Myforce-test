@@ -45,6 +45,9 @@ a, h1, p, li, ul {
     padding: 0 10p;
 }
 
+button:disabled {
+    opacity: 0.5;
+}
 
 
 
