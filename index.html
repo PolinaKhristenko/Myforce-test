@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -19,11 +20,11 @@
             <div class="container">
                 <header class="header">
                     <div class="header__item hide">
-                        <a href="" ><img src="src/logo.svg" alt="Логотип" /></a>
+                        <a href="/" ><img src="src/logo.svg" alt="Логотип" /></a>
                     </div>
                     <div class="header__item">
                         <p class="header__call hide">Позвоните сейчас</p>
-                        <a class="header__num" href="">8 495 230 21 55</a>
+                        <a class="header__num" href="tel:84952302155">8 495 230 21 55</a>
                     </div>
                     <div class="header__item">
                         <button class="header__consult">
@@ -42,9 +43,9 @@
                         Списание долгов на основании ФЗ№ 127 «О нестостоятельности (банкротстве)»
                         </p>
 
-                        <p class="main1__title">
+                        <h1 class="main1__title">
                             Спишем ваши долги
-                        </p>
+                        </h1>
 
                         <p class="main__subtitle">
                             Пройдите тест и получите:
@@ -86,26 +87,26 @@
 
                         <form id="form2" method="post" action="#"> <!--Начало второй формы-->
                         <div class="main__radio">
-                            <input class="debt" type="radio" name="debt" value="менее 500 000  рублей" >
-                            <label for="debt-sum">менее 500 000  рублей</label>
+                            <input class="debt" id="debt1" type="radio" name="debt" value="менее 500 000  рублей" >
+                            <label for="debt1">менее 500 000  рублей</label>
                         </div>
                         <div class="main__radio">
-                            <input  class="debt" type="radio" name="debt" value="от 500 000 до 1 000 000 рублей" >
-                            <label for="debt-sum">от 500 000 до 1 000 000 рублей</label>
+                            <input  class="debt" id="debt2" type="radio" name="debt" value="от 500 000 до 1 000 000 рублей" >
+                            <label for="debt2">от 500 000 до 1 000 000 рублей</label>
                         </div>
                         <div class="main__radio">
-                            <input class="debt" type="radio" name="debt" value="от 1 000 000 до 5 000 000 рублей" >
-                            <label for="debt-sum">от 1 000 000 до 5 000 000 рублей</label>
+                            <input class="debt" id="debt3" type="radio" name="debt" value="от 1 000 000 до 5 000 000 рублей" >
+                            <label for="debt3">от 1 000 000 до 5 000 000 рублей</label>
                         </div>
                         <div class="main__radio">
-                            <input class="debt" type="radio" name="debt" value="более 5 000 000" >
-                            <label for="debt-sum">более 5 000 000</label>
+                            <input class="debt"  id="debt4" type="radio" name="debt" value="более 5 000 000" >
+                            <label for="debt4">более 5 000 000</label>
                         </div>
 
 
-                        <button class="main__button-next next-2" name="sub" type="submit">
+                        <button class="main__button-next next-2" name="sub" type="button">
                             Далее 
-                            <img src="src/arrow-right-bold.svg" />
+                            <img src="src/arrow-right-bold.svg" alt="Стрелка"/>
                         </button>
 
                     </div>
@@ -116,33 +117,33 @@
                         <p class="main__subtitle">Есть ли у вас в собственности имущество?</p>
 
                         <div class="main__radio">
-                            <input type="radio" name="estate" value="Да, есть квартира (две и более)" >
-                            <label for="estate">Да, есть квартира (две и более)</label>
+                            <input type="radio" id="estate1" name="estate" value="Да, есть квартира (две и более)" >
+                            <label for="estate1">Да, есть квартира (две и более)</label>
                         </div>
                         <div class="main__radio">
-                            <input type="radio" name="estate" value="Да, есть автомобиль" >
-                            <label for="estate">Да, есть автомобиль</label>
+                            <input type="radio" id="estate2" name="estate" value="Да, есть автомобиль" >
+                            <label for="estate2">Да, есть автомобиль</label>
                          </div>
                         <div class="main__radio">
-                            <input type="radio" name="estate" value="Да, есть коммерческая собственность" >
-                            <label for="estate">Да, есть коммерческая собственность</label>
+                            <input type="radio" id="estate3" name="estate" value="Да, есть коммерческая собственность" >
+                            <label for="estate3">Да, есть коммерческая собственность</label>
                         </div>
                         <div class="main__radio">
-                            <input type="radio" name="estate" value="Да, есть другая собственность" >
-                            <label for="estate">Да, есть другая собственность</label>
+                            <input type="radio" id="estate4" name="estate" value="Да, есть другая собственность" >
+                            <label for="estate4">Да, есть другая собственность</label>
                         </div>
                         <div class="main__radio">
-                            <input type="radio" name="estate" value="Нет, ничего нет" >
-                            <label for="estate">Нет, ничего нет</label>
+                            <input type="radio" id="estate5" name="estate" value="Нет, ничего нет" >
+                            <label for="estate5">Нет, ничего нет</label>
                         </div>
                         <div class="main__buttons" >
                             <button class="main__button-back back-3" type="button" name="back">
                                 <img src="src/arrow-left-gray.svg" />
                                     Назад
                                 </button>
-                                <button class="main__button-next next-3" name="sub" type="submit">
+                                <button class="main__button-next next-3" name="sub" type="button">
                                     Далее 
-                                <img src="src/arrow-right-bold.svg" />
+                                <img src="src/arrow-right-bold.svg" alt="Стрелка"/>
                             </button>  
                         </div>
                         
@@ -156,24 +157,24 @@
                         <p class="main__subtitle">Совершали ли вы крупные сделки за последние 3 года?</p>
         
                             <div class="main__radio">
-                                <input type="radio" name="deal" value="Да. была продажа квартиры / авто / участка" >
-                                <label for="radio__3-1">Да. была продажа квартиры / авто / участка</label>
+                                <input type="radio" id="deal1" name="deal" value="Да. была продажа квартиры / авто / участка" >
+                                <label for="deal1">Да. была продажа квартиры / авто / участка</label>
                             </div>
                             <div class="main__radio">
-                                <input type="radio" name="deal" value="Да. была продажа коммерческой собственности" >
-                                <label for="deal">Да. была продажа коммерческой собственности</label>
+                                <input type="radio" id="deal2" name="deal" value="Да. была продажа коммерческой собственности" >
+                                <label for="deal2">Да. была продажа коммерческой собственности</label>
                             </div>
                             <div class="main__radio">
-                                <input type="radio" name="deal" value="Да, была продажа ИП / ООО" >
-                                <label for="deal">Да, была продажа ИП / ООО</label>
+                                <input type="radio" id="deal3" name="deal" value="Да, была продажа ИП / ООО" >
+                                <label for="deal3">Да, была продажа ИП / ООО</label>
                             </div>
                             <div class="main__radio">
-                                <input type="radio" name="deal" value="Да, была продажа (другое)" >
-                                <label for="deal">Да, была продажа (другое)</label>
+                                <input type="radio" id="deal4" name="deal" value="Да, была продажа (другое)" >
+                                <label for="deal4">Да, была продажа (другое)</label>
                             </div>
                             <div class="main__radio">
-                                <input type="radio" name="deal" value="Нет, ничего не было" >
-                                <label for="deal">Нет, ничего не было</label>
+                                <input type="radio" id="deal5" name="deal" value="Нет, ничего не было" >
+                                <label for="deal5">Нет, ничего не было</label>
                             </div>
 
                             <div class="main__buttons">
@@ -181,9 +182,9 @@
                                     <img src="src/arrow-left-gray.svg" />
                                     Назад
                                 </button>
-                                <button class="main__button-next next-4" name="sub" type="submit">
+                                <button class="main__button-next next-4" name="sub" type="button">
                                     Далее 
-                                    <img src="src/arrow-right-bold.svg" />
+                                    <img src="src/arrow-right-bold.svg" alt="Стрелка" />
                                 </button>  
                             </div>
     
@@ -197,15 +198,15 @@
                         <p class="main__subtitle">Как вы бы хотели получить варианты списанию долгов и консультацию юриста?</p>
         
                             <div class="main__radio">
-                                <input type="radio" name="consult" value="В офисе «ЮрКонсалт+»" >
-                                <label for="consult">В офисе «ЮрКонсалт+»</label>
+                                <input type="radio" id="consult1" name="consult" value="В офисе «ЮрКонсалт+»" >
+                                <label for="consult1">В офисе «ЮрКонсалт+»</label>
                             </div>
                             <div class="main__radio">
-                                <input type="radio" name="consult" value="По телефону" >
-                                <label for="consult">По телефону</label>
+                                <input type="radio" id="consult2" name="consult" value="По телефону" >
+                                <label for="consult2">По телефону</label>
                             </div>
     
-                            <button class="main5__test-options btn__options" type="submit">
+                            <button class="main5__test-options btn__options" type="button">
                                 Получить варианты списания
                                 <img src="src/arrow-right-bold.svg" alt="Стрелка" />
                             </button>
@@ -249,11 +250,12 @@
             </div>
         </main>
 
+        <div class="features">
         <div class="container">
-            <div class="features">
+            <div class="features__body">
                 <div class="features__item">
                     <div class="features__img">
-                        <img src="src/feature1.svg" />
+                        <img src="src/feature1.svg"  alt="Книга с изображением весов"/>
                     </div>
                     <p class="features__title">
                         Опытные юристы
@@ -265,7 +267,7 @@
 
                 <div class="features__item">
                     <div class="features__img">
-                        <img src="src/feature2.svg" />
+                        <img src="src/feature2.svg"  alt="Здание с колоннами"/>
                     </div>
                     <p class="features__title">
                         Офис в центре Москвы
@@ -277,7 +279,7 @@
 
                 <div class="features__item">
                     <div class="features__img">
-                        <img src="src/feature3.svg" />
+                        <img src="src/feature3.svg" alt="Свиток"/>
                     </div>
                     <p class="features__title">
                         Гарантии в договоре
@@ -289,7 +291,7 @@
 
                 <div class="features__item">
                     <div class="features__img">
-                        <img src="src/feature4.svg" />
+                        <img src="src/feature4.svg" alt="Орден"/>
                     </div>
                     <p class="features__title">
                         На более 570 миллиардов
@@ -300,6 +302,7 @@
                 </div>
             </div>
         </div>
+        </div>
 
 
         <footer class="footer">
@@ -307,18 +310,18 @@
                 <div class='footer__body'>
                     <div class='footer__body-left'>
                         <div class='footer__contact'>
-                            <a href="">+7 495 230 21 55</a>
-                            <a href="">info@lordpartners.ru</a>
+                            <a href="tel:+74952302155">+7 495 230 21 55</a>
+                            <a href="mailto:info@lordpartners.ru">info@lordpartners.ru</a>
                         </div>
                         <p class='footer__remark'>
                             *отправляя формы на данном сайте, вы даете <br>согласие на обработку персональных данных <br>в соответствии с 152-ФЗ
                         </p>
                         <p class='footer__info-txt'>При информационном содействии</p>
                         <div class='footer__info'>
-                            <img src="src/info1.svg" />
-                            <img src="src/info2.svg" />
-                            <img src="src/info3.svg" />
-                            <img src="src/info4.svg" />
+                            <img src="src/info1.svg" alt="Государственная организация"/>
+                            <img src="src/info2.svg" alt="Государственная организация"/>
+                            <img src="src/info3.svg" alt="Государственная организация"/>
+                            <img src="src/info4.svg" alt="Государственная организация"/>
                         </div>
                     </div>
 
@@ -329,15 +332,15 @@
                         </p>
                         <div class="footer__cases">
                             <div class="footer__cases-col">
-                                <div class='footer__case'><img src="src/check-black.svg" /> Полное списание долгов</div>
-                                <div class='footer__case'><img src="src/check-black.svg" /> Частичное списание долгов</div>
-                                <div class='footer__case'><img src="src/check-black.svg" /> Реструктуризация долгов</div>
+                                <div class='footer__case'><img src="src/check-black.svg" alt="Галка"/> Полное списание долгов</div>
+                                <div class='footer__case'><img src="src/check-black.svg" alt="Галка"/> Частичное списание долгов</div>
+                                <div class='footer__case'><img src="src/check-black.svg" alt="Галка"/> Реструктуризация долгов</div>
                             </div>
 
                             <div class="footer__cases-col">
-                                <div class='footer__case'><img src="src/check-black.svg" /> Банкротство ИП</div>
-                                <div class='footer__case'><img src="src/check-black.svg" /> Списание долгов по распискам</div>
-                                <div class='footer__case'><img src="src/check-black.svg" /> Списание долгов перед государством</div>
+                                <div class='footer__case'><img src="src/check-black.svg" alt="Галка"/> Банкротство ИП</div>
+                                <div class='footer__case'><img src="src/check-black.svg" alt="Галка"/> Списание долгов по распискам</div>
+                                <div class='footer__case'><img src="src/check-black.svg" alt="Галка"/> Списание долгов перед государством</div>
                             </div>
                         </div>
 
@@ -357,7 +360,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="copyright">ИНН 9702007211  ОГРН 1197746584760  ООО «ЮрКонсалт+»  Политика персональных данных</p>
+                <p class="copyright">ИНН 9702007211  ОГРН 1197746584760  ООО «ЮрКонсалт+»  П<a href="">олитика персональных данных</a></p>
             </div>
         </footer>
 
